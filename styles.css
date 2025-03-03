@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(/images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  margin: 50px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+div > img {
+  max-width: 100%;
+  width: 800px;
+}
+
+.info {
+  width: 600px;
+  height: 400px;
+  margin: 20px;
+  margin-left: 100px;
+}
+
+h1 {
+  font-family: "Poppins";
+  font-size: 50px;
+  color: white;
+}
+
+p {
+  font-family: "Open Sans";
+  font-size: 20px;
+  color: white;
+  font-weight: normal;
+}
+
+button[type="submit"] {
+  background-color: white;
+  padding: 20px 60px 20px 60px;
+  border-radius: 30px;
+  font-family: "Open Sans";
+  font-size: 20px;
+  color: hsl(257, 40%, 49%);
+  border: 1px transparent;
+  box-shadow: 0px 3px 6px rgb(56, 14, 56);
+  cursor: pointer;
+  transition: 1s;
+  margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+
+.attribution {
+  text-align: center;
+  font-size: 17px;
+  color: white;
+  margin-top: 165px;
+}
+
+a {
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url(/images/bg-mobile.svg);
+    background-size: cover;
+  }
+  div > img {
+    width: 400px;
+  }
+  img {
+    width: 200px;
+  }
+  .info {
+    margin-left: 0px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 35px;
+    padding: 10px;
+    font-weight: normal;
+  }
+  p {
+    margin-left: 0px;
+    text-align: center;
+    line-height: 2;
+    padding: 10px;
+  }
+  button[type="submit"] {
+    margin-left: 130px;
+  }
+}
